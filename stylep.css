@@ -8,27 +8,30 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
+
 }
 
 body {
     background-color: black;
-    width: 100%;
-    overflow-x: hidden;
-    /* Prevent horizontal scroll */
+    width: 100vw;
 }
 
 .main {
     background-image: url("asset/bg.jpg");
+
+
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100%);
+    background-size: max(1200px, 100vw);
     height: 70vh;
     position: relative;
+
+
 }
 
 .main .box {
     height: 70vh;
-    width: 100%;
+    width: 100vw;
     opacity: 0.7;
     background-color: black;
     position: absolute;
@@ -36,6 +39,7 @@ body {
 }
 
 nav {
+    /* background-color: wheat; */
     max-width: 82vw;
     margin: auto;
     height: 65px;
@@ -60,7 +64,7 @@ nav button {
 .text {
     color: white;
     text-align: center;
-    height: calc(100% - 65px);
+    height: calc(100%-65px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +73,7 @@ nav button {
     position: relative;
     padding: 0px 24px;
     gap: 10px;
+
 }
 
 .text> :first-child {
@@ -84,21 +89,29 @@ nav button {
 .text> :nth-child(3) {
     font-size: 1.2rem;
     font-weight: 350;
+
 }
 
 .text> :nth-child(4) {
     font-size: 1.2rem;
     font-weight: 350;
+
 }
 
 .sep {
-    background: linear-gradient(180deg, #ff0066, #000033);
-    /* Customize colors */
-    height: 10px;
-    width: 90%;
-    margin: auto;
-    border-top-left-radius: 100% 50px;
-    border-top-right-radius: 100% 50px;
+    border: 3px solid red;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(22, 7, 78) 0%, rgb(0, 0, 0) 100%);
+   
+    position: relative;
+    padding: 30px;
+    width: 100vw;
+    overflow: hidden;
+    
+    /* border-top-left-radius: 95%; */
+    border-radius: 100%;
+    /* border-top-right-radius: 95%; */
+    border-bottom: 0px;
 }
 
 .btn {
@@ -106,6 +119,7 @@ nav button {
     background-color: white;
     border: none;
     padding: 3px 8px;
+
 }
 
 .red-btn-s {
@@ -114,6 +128,7 @@ nav button {
     padding: 3px 15px;
     font-size: 15px;
     border-radius: 5px;
+
 }
 
 .red-btn-b {
@@ -129,10 +144,11 @@ nav button {
     padding: 15px 140px 13px 15px;
     border: 1px solid rgba(255, 255, 255, 0.494);
     color: white;
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 16px;
     border-radius: 5px;
     background-color: rgba(24, 24, 24, 0.5);
+
 }
 
 .text-btn {
@@ -143,91 +159,91 @@ nav button {
     gap: 10px;
 }
 
+/* .sep{
+  border: 10px solid rgb(230, 11, 11);
+
+} */
 .section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.container {
 
-.container{
     display: flex;
-    height: 400px;
-    background-color: rgb(0, 0, 0);
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin:10px;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(40, 36, 36, 0.703);
+    height: 40vh;
+    width: 90vw;
+    gap: 5px;
+    padding: 0px, 50px;
+    position: relative;
 
 }
-.container::-webkit-scrollbar{
-    width: 0;
+
+.box {
+    height: 260px;
+    width: 205px;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+
+
+
 }
-.container .box{
-    min-width: 200px;
-    /* height: 320px; */
-    padding:25px;
-    margin: 10px;
-    background-color: blueviolet;
+
+.box1 {
+    background-image: url(asset/breaking\ bad.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
 }
 
+.box2 {
+    background-image: url(asset/Dark\ Webseries.jpg);
+    background-size: cover;
+}
 
+.box3 {
+    background-image: url(asset/GOT.jpg);
+    background-size: cover;
+}
 
-.box12{
-    background: url(asset/Basketball-daries.jpg);
+.box4 {
+    background-image: url(asset/runaway.jpg);
+    background-size: cover;
 }
-.box10{
-    background: url(asset/Better_call_saul.jpg);
+
+.box5 {
+    background-image: url(asset/oppenheimer.jpg);
+    background-size: cover;
 }
-.box3{
-    background: url(asset/Chernobly.jpg);
+
+.box6 {
+    background-image: url(asset/HOHH.jpg);
+    background-size: cover;
 }
-.box4{
-    background: url(asset/inception.jpg);
-}
-.box5{
-    background: url(asset/Interstellar.jpg);
-}
-.box6{
-    background: url(asset/jocker.jpg);
-}
-.box7{
-    background: url(asset/Money_heist.jpg);
-}
-.box8{
-    background: url(asset/oppenheimerr.jpg);
-}
-.box9{
-    background: url(asset/Predestination.jpg);
-}
-.box2{
-    background: url(asset/sutter-island.jpg);
-}
-.box11{
-    background: url(asset/runaway.jpg);
-}
-.box1{
-    background: url(asset/breaking\ bad.jpg);
-}
+
 .tn {
     height: 60px;
+
     font-family: "Sniglet", serif;
     font-size: 40px;
     color: white;
     margin: 20px 150px;
     font-weight: 20px;
+
 }
 
 .over {
+    /* background-color: pink; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+
     gap: 40px;
     position: relative;
     top: 245px;
@@ -237,6 +253,7 @@ nav button {
 
 .rank {
     display: flex;
+
     justify-content: center;
     height: 100px;
     font-family: "Comfortaa", serif;
@@ -244,11 +261,19 @@ nav button {
     color: black;
     -webkit-text-fill-color: rgb(2, 0, 0);
     -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+
     font-weight: 80px;
     font-size: 85px;
+    /* padding: 20px; */
     margin: 10px;
     align-items: center;
+    /* background-color: rgb(119, 119, 189); */
+
+
+
 }
+
+.sec3 {}
 
 .container2 {
     background-color: rgba(21, 8, 10, 0.744);
@@ -263,6 +288,7 @@ nav button {
 .bin {
     height: 320px;
     width: 250px;
+
     border-radius: 20px;
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 88, 1) 46%, rgba(0, 30, 125, 1) 100%);
@@ -272,6 +298,7 @@ nav button {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+
 }
 
 .bin :first-child {
@@ -286,6 +313,7 @@ nav button {
     color: white;
     margin: 20px 150px;
     font-weight: 20px;
+
 }
 
 .sec4 {
@@ -298,6 +326,7 @@ nav button {
 .container3 {
     display: flex;
     flex-direction: column;
+
     height: 550px;
     width: 80vw;
     margin: auto;
@@ -313,23 +342,27 @@ nav button {
     padding: 20px;
     font-size: 22px;
     font-weight: 700px;
+
     padding-left: 30px;
     color: white;
 }
 
 .row>span {
     font-size: 40px;
+
 }
 
 .footer>span {
     color: white;
     height: 40px;
+
     align-items: center;
+
 }
 
 .footer {
     height: 40vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -340,15 +373,15 @@ nav button {
     padding: 15px 300px 13px 15px;
     border: 1px solid rgba(255, 255, 255, 0.494);
     color: white;
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 16px;
     border-radius: 5px;
     background-color: rgba(24, 24, 24, 0.5);
-}
 
-.ref {
+}
+.ref{
     height: 30px;
-    width: 100%;
+    width: 100vw;
     color: white;
     text-align: center;
     font-size: 20px;
